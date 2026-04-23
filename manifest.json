@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Virasty Scraper",
+  "version": "1.0",
+  "description": "استخراج کننده اطلاعات ویراستی",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://virasty.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
